@@ -41,6 +41,7 @@ public class userInterface {
 	private JLabel lblWhatDoYou;
 	private JTextField activity;
 	private JTextField matcher;
+	private JLabel lblFindFriendsIn;
 			
 	/**
 	 * Launch the application.
@@ -75,12 +76,12 @@ public class userInterface {
 		frame.getContentPane().setLayout(null);
 		
 		inputfirstName = new JTextField();
-		inputfirstName.setBounds(107, 28, 400, 16);
+		inputfirstName.setBounds(91, 69, 116, 16);
 		frame.getContentPane().add(inputfirstName);
 		inputfirstName.setColumns(10);
 		
 		inputfamilyname = new JTextField();
-		inputfamilyname.setBounds(107, 55, 400, 17);
+		inputfamilyname.setBounds(357, 68, 130, 17);
 		frame.getContentPane().add(inputfamilyname);
 		inputfamilyname.setColumns(10);
 		
@@ -102,33 +103,35 @@ public class userInterface {
 		});
 		
 		lblNewLabel = new JLabel("CTF Matcher Version 3.2 ");
-		lblNewLabel.setFont(new Font("Lucida Grande", Font.PLAIN, 15));
+		lblNewLabel.setForeground(new Color(153, 0, 0));
+		lblNewLabel.setFont(new Font("Lucida Grande", Font.PLAIN, 27));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setBounds(6, 1, 438, 16);
+		lblNewLabel.setBounds(6, -11, 501, 56);
 		frame.getContentPane().add(lblNewLabel);
 		
 		lblFirstName = new JLabel("First Name:");
-		lblFirstName.setBounds(6, 28, 116, 16);
+		lblFirstName.setBounds(6, 69, 116, 16);
 		frame.getContentPane().add(lblFirstName);
 		
 		lblFamilyName = new JLabel("Family Name:");
-		lblFamilyName.setBounds(6, 56, 137, 16);
+		lblFamilyName.setBounds(251, 69, 137, 16);
 		frame.getContentPane().add(lblFamilyName);
 		
 		lblPleaseEnterYour = new JLabel("Please enter your message to people you might ");
-		lblPleaseEnterYour.setBounds(6, 84, 310, 16);
+		lblPleaseEnterYour.setBounds(6, 97, 310, 16);
 		frame.getContentPane().add(lblPleaseEnterYour);
 		
 		lblMatchWithAnd = new JLabel("match with and your contact information.");
-		lblMatchWithAnd.setBounds(6, 98, 299, 16);
+		lblMatchWithAnd.setBounds(6, 112, 299, 16);
 		frame.getContentPane().add(lblMatchWithAnd);
 		
 		inputMessage = new JTextField();
-		inputMessage.setBounds(6, 116, 496, 26);
+		inputMessage.setBounds(6, 126, 501, 26);
 		frame.getContentPane().add(inputMessage);
 		inputMessage.setColumns(10);
 		
 		continueButton = new JButton("MATCH");
+		continueButton.setFont(new Font("Lucida Grande", Font.BOLD, 20));
 		continueButton.addActionListener(new ActionListener() {
 		
 			
@@ -223,23 +226,30 @@ public class userInterface {
 
 		});
 		
-		continueButton.setBounds(6, 188, 501, 29);
+		continueButton.setBounds(6, 201, 501, 47);
 		frame.getContentPane().add(continueButton);
 		
 		lblWhatDoYou = new JLabel("What do you want to do? (e.g.: Habs game, astronomy event, etc.)");
-		lblWhatDoYou.setBounds(6, 144, 427, 16);
+		lblWhatDoYou.setBounds(6, 154, 427, 16);
 		frame.getContentPane().add(lblWhatDoYou);
 		
 		activity = new JTextField();
-		activity.setBounds(6, 163, 496, 26);
+		activity.setBounds(6, 172, 501, 26);
 		frame.getContentPane().add(activity);
 		activity.setColumns(10);
 		
 		matcher = new JTextField();
+		matcher.setFont(new Font("Zapfino", Font.BOLD, 18));
 		
-		matcher.setBounds(6, 220, 501, 165);
+		matcher.setBounds(6, 247, 501, 138);
 		frame.getContentPane().add(matcher);
 		matcher.setColumns(10);
+		
+		lblFindFriendsIn = new JLabel("Find friends in Montreal!");
+		lblFindFriendsIn.setForeground(new Color(0, 0, 102));
+		lblFindFriendsIn.setHorizontalAlignment(SwingConstants.CENTER);
+		lblFindFriendsIn.setBounds(6, 29, 501, 16);
+		frame.getContentPane().add(lblFindFriendsIn);
 		
 	}
 }
